@@ -24,7 +24,7 @@ describe('locale utils', () => {
       const key = 'test2';
       const result = shallow(utils.getLocalizedElement(key, translations));
       expect(result.find('span').exists()).toBe(true);
-      expect(result.find('span').html()).toEqual(`<span>Missing locaized: ${key}</span>`);
+      expect(result.find('span').html()).toEqual(`<span>Missing localized: ${key}</span>`);
     });
   });
 
